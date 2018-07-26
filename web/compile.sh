@@ -1,0 +1,1 @@
+emcc -std=c++11 -o alg.js ../main.cpp ../latex_lexer.cpp ../algebra.cpp ../expression.cpp ../parser.cpp ../util.cpp --js-library math.js -s WASM=1 -s EXPORTED_FUNCTIONS='["_main","_equation_edit_callback"]' -s EXTRA_EXPORTED_RUNTIME_METHODS='["ccall", "cwrap"]'
